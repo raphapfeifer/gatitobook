@@ -16,14 +16,14 @@ export class NovoUsuarioComponent implements OnInit {
 
   constructor(private formBuilder:FormBuilder,
      private NovoUsuarioService: NovoUsuarioService,
-     private usuarioExistenteService: UsuarioExistenteService
+     private usuarioExisteService: UsuarioExisteService
      ) { }
 
   ngOnInit(): void {
       this.novoUsuarioForm = this.formBuilder.group({
         email: ['', [Validators.required,Validators.email]],
         fullName: ['', [Validators.required, Validators.minLength(4)]],
-        userName: ['', [minusculoValidator],[this.usuarioExistenteService.UsuarioExisteService()]],
+        userName: ['', [minusculoValidator],[this.usuarioExisteService.usuarioJaExiste()]],
         password: ['']
       });
   }
