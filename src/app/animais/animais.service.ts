@@ -3,9 +3,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Animais } from './animal';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 
-const API = 'http://localhost:3000';
+const API = environment.apiURL;
 
 @Injectable({
   providedIn: 'root'
