@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Animais } from '../animais';
 
 @Component({
   selector: 'app-grade-fotos-animais',

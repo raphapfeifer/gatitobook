@@ -3,8 +3,8 @@
 </p>
 
 <div class="row">
-  <div ngFor="let animal of animais" class="col-4 ">
-      <a [routerLink]="['/animais', animail.id]"></a>
+  <div *ngFor="let animal of animais" class="col-4 ">
+      <a [routerLink]="['/animais', animal.id]"></a>
       <app-cartao>
         <app-animal
         [url]="animal.url"
@@ -15,3 +15,4 @@
       </app-cartao>
   </div>
 </div>
+

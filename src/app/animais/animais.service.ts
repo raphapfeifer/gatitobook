@@ -1,7 +1,7 @@
 import { TokenService } from './../autenticacao/token.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Animais } from './animal';
+import { Animais } from './animais';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
