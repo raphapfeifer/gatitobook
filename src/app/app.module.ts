@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CabecalhoModule } from './componentes/cabecalho/cabecalho.module';
 import { RodapeModule } from './componentes/rodape/rodape.module';
 import { RouterModule } from '@angular/router';
+import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     CabecalhoModule,
     RodapeModule,
+    AutenticacaoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
