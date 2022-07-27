@@ -2,7 +2,7 @@
   <form [formGroup]="formularioAnimal" class="row" (submit)="upload()">
       <div class="col-md-6 text-center" >
         <div class="form-group" *ngIf="!preview; else previewImage">
-          <button type="button" (click)="fileInput.click()">
+          <button type="button" (click)="fileInput.click()" class="btn btn-primary">
             <i class="fa fa-image fa-4x align-middle"></i>
           </button>
           <input #fileInput type="file" hidden formControlName="file" accept="image/*" (change)="gravaEvento($event.target)"/>
@@ -29,7 +29,7 @@
           </div>
           <div *ngIf="!percentualConcluido; else uploaddiv">
               <button [disabled]="formularioAnimal.invalid" type="submit" class="btn btn-primary btn-block"
-              ></button>
+              >Enviar</button>
 
               <a routerLink="['animais']" class="btn btn-secondary btn-block">
                 Cancelar

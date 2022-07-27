@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AnimaisService } from '../animais.service';
 import { Router } from '@angular/router';
-import { finalize } from 'rxjs/dist/types/operators';
-import { HttpEvent, HttpEventType } from '@angular/common/http/http';
+import { finalize } from 'rxjs/operators';
+import { HttpEvent, HttpEventType } from '@angular/common/http';
 
 @Component({
   selector: 'app-novo-animal',
